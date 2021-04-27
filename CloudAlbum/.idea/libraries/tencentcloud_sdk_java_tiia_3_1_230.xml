@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tencentcloud-sdk-java-tiia-3.1.230">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/tencentcloud-sdk-java-tiia-3.1.230.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
