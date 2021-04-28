@@ -22,7 +22,7 @@ router.beforeEach((to, from, next) => {
   const type = to.meta.type
 
   if (type === 'checkLogin') {
-    if (window.localStorage.getItem('account')) {
+    if (window.sessionStorage.getItem('account')) {
       next()
     } else {
       next('/login')

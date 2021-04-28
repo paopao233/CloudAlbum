@@ -45,6 +45,7 @@
         this.$store.commit("setUserKey", '')
         this.$store.commit('setUserName', '')
         this.$store.commit('setImages', '')
+        window.sessionStorage.removeItem('account')
         this.$router.push('/login')
       }
     }

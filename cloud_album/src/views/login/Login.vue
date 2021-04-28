@@ -88,10 +88,11 @@ import Register from "@/views/login/components/Register";
           if (res !== -1) {
             this.$store.commit("setUserKey", res)
             this.$store.commit('setUserName', account)
-            window.localStorage.setItem("account", account);
+            window.sessionStorage.setItem("account", account);
             this.$router.push('/picture')
           } else {
-            console.log('failed');
+            this.snackBarTip = '账号或密码错误'
+            this.snackbar = true
           }
         })
       }

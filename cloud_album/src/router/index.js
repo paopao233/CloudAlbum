@@ -4,6 +4,7 @@ import PicturePage from "@/views/picturePage/PicturePage";
 import Moment from "@/views/moment/Moment";
 import Login from "@/views/login/Login";
 import Register from "@/views/login/components/Register";
+import Page404 from "@/views/404/Page404";
 
 Vue.use(VueRouter)
 
@@ -43,6 +44,14 @@ const routes = [
       title: '精彩时刻',
       type: 'checkLogin'
     }
+  },
+  {
+    path: '*',
+    redirect: '/404'
+  },
+  {
+    path: '/404',
+    component: Page404
   }
 ]
 

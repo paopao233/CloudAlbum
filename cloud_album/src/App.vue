@@ -15,7 +15,7 @@
     components: {AppBar},
     computed: {
       showAppBar() {
-        return this.$route.path !== '/login'
+        return this.$route.path !== '/login' && this.$route.path !== '/404'
       }
     }
   };
